@@ -1,0 +1,154 @@
+.features 
+{
+  padding-top: 40px;
+  padding-bottom: 64px;
+  text-align: center;
+  color: white;
+}
+
+.selector
+{
+  display:flex;
+}
+
+.feature-bullet 
+{
+  display: flex;
+}
+
+.tab-cont
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top:16px;
+  flex: 1;
+  max-width: 235px;
+  height: 100%;
+  outline:0;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.tab-cont button
+{
+  display:flex;
+  width: 235px;
+  background-color: #2D2924;
+  padding: 16px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  border-color: transparent;
+  outline:0;
+}
+
+.tab-cont button:hover
+{
+  background-color: #F8F9FA;
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+
+.tab-content
+{
+  flex: 9;
+  height: 100%;
+  animation: anime 1.5s;
+  text-align:left;
+  display:none;
+  font-family: sans-serif;
+}
+
+.tab-content.active
+{
+  display:block;
+}
+
+.tab-cont .tab-button.active
+{
+  background-color: #FFFFFF;
+  color: #750200;
+  border-left: 3px solid #750200;
+  text-decoration: none;
+  outline:0;
+  font-weight: 500;
+}
+
+@keyframes anime 
+{
+  from
+  {opacity: 0}
+  to
+  {opacity: 1}
+}
+
+@media only screen and (max-width: 800px) 
+{
+  .tab-cont 
+  {
+    display: flex;
+    flex-direction: row;
+    border: none;
+  }
+
+  .tab-cont .tab-button.active
+  {
+    border-left: none;
+    border-bottom: 4px solid #750200;
+
+  }
+
+  .selector 
+  {
+    flex-direction:column;
+  }
+
+  .tab-content 
+  {
+    padding-left: 0;
+  }
+}
+
+.card-grid-container 
+{
+  display: grid;
+  --auto-grid-min-size: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  max-width: 1200px;
+  width: 100%; 
+  height: 100%;
+  padding-left: 20px;
+}
+
+.img-card 
+{
+  width: 100%;
+  height: 200px !important;
+  display: grid;
+  grid-template-columns: 2;
+  grid-column-gap: 10px;
+}
+
+.img-card img
+{
+  width: 120px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.img-card .col-1
+{
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.img-card .col-2
+{
+  grid-area: 1 / 2 / 2 / 3;
+}

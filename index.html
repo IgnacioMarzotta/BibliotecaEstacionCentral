@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Estacion Central</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/mainBanner.css">
+    <link rel="stylesheet" href="assets/styles/cardPanels.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="nav-container" id="header">
+        <nav class="navbar nav-outer">
+            <a href="#" class="nav-brand">Biblioteca EC</a>
+            <div class="nav-search">
+                <form class="nav-search-form">
+                    <input type="text" name="nav-search" class="nav-search-input" placeholder="Busca por titulo" autofocus>
+                    <button type="submit" class="nav-search-submit" disabled><img src="assets/img/lupa.png"></button>
+                </form>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-menu-inner">
+                    <li class="nav-menu-item"><a href="#" class="nav-menu-link">Listing</a></li>
+                    <li class="nav-menu-item"><a href="#" class="nav-menu-link">Feature</a></li>
+                    <li class="nav-menu-item"><a href="#" class="nav-menu-link">Popular</a></li>
+                    <li class="nav-menu-item"><a href="#" class="nav-menu-link">Support</a></li>
+                </ul>
+            </div>
+            <div class="nav-burger" id="nav-burger">
+                <span class="nav-burger-line"></span>
+                <span class="nav-burger-line"></span>
+                <span class="nav-burger-line"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="carousel">
+        <div class="slides">
+            <img src="https://picsum.photos/1280/720?random=1" alt="slide image" class="slide">
+            <img src="https://picsum.photos/1280/720?random=2" alt="slide image" class="slide">
+            <img src="https://picsum.photos/1280/720?random=3" alt="slide image" class="slide">
+        </div>
+        <div class="controls">
+            <div class="control prev-slide">&#9668;</div>
+            <div class="control next-slide">&#9658;</div>
+        </div>
+    </div>
+    <div class="row" style="background-color: #2D2924; padding-top: 30px;">
+        <div class="container">
+            <h1 class="section-header">POPULARES POR CATEGORIA</h1>
+            <hr>
+            <div class="features">
+                <div class="selector" id="features">
+                    <div class="tab-cont">
+                        <button class="tab-button active feature-1 tab-item" onclick="feature(event, 'feature-1')">Categoria</button>
+                        <button class="tab-button feature-2 tab-item" onclick="feature(event, 'feature-2')">Categoria</button>
+                        <button class="tab-button feature-3 tab-item" onclick="feature(event, 'feature-3')">Categoria</button>
+                    </div>
+                    <div class="tab-content feature-1 active tab-item" id="feature-1">
+                        <div class="feature-bullet">
+                            <div class="card-grid-container">
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=1" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=2" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=3" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content feature-2 tab-item" id="feature-2">
+                        <div class="feature-bullet">
+                            <div class="card-grid-container">
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=4" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=5" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=6" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content feature-3 tab-item" id="feature-3">
+                        <div class="feature-bullet">
+                            <div class="card-grid-container">
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=7" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=8" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                                <div class="card img-card">
+                                    <img src="https://picsum.photos/360/720?random=9" class="col-1" alt="">
+                                    <div class="col-2">
+                                        <h3>Titulo de Libro</h3>
+                                        <p>Descripcion de libro</p>
+                                        <h5>Stock: X</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: #1F1A18; color: white; height: 500px;">
+        <div class="container">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime odio doloremque sed ab dignissimos pariatur laborum possimus quisquam eligendi totam, corrupti modi quos in a esse libero impedit repellendus nobis?
+        </div>
+    </div>
+    <div class="row" style="background-color: #2D2924; color: white; height: 500px;">
+        <div class="container">
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="inner-footer">
+            <div class="footer-items">
+                <h1>Biblioteca Estacion Central</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, iusto ipsam harum veritatis, unde ex aliquid in recusandae quos nihil, repellat delectus veniam ullam fugit quo? Reiciendis ratione nesciunt libero!</p>
+            </div>
+            
+            <div class="footer-items">
+                <h3>Links</h3>
+                <div class="border1"></div>
+                <ul class="footer-list">
+                    <a href="#"><li>Inicio</li></a>
+                    <a href="#"><li>Perfil</li></a>
+                    <a href="#"><li>Galeria</li></a>
+                </ul>
+            </div>
+            
+            <div class="footer-items">
+                <h3>XXXXXX</h3>
+                <div class="border1"></div>
+                <ul class="footer-list">
+                    <a href="#"><li>XXXXXX</li></a>
+                    <a href="#"><li>XXXXXX</li></a>
+                    <a href="#"><li>XXXXXX</li></a>
+                    <a href="#"><li>XXXXXX</li></a>
+                </ul>
+            </div>
+            
+            <div class="footer-items">
+                <h3>XXXXXX</h3>
+                <div class="border1"></div>
+                <ul class="footer-list">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>XXXXXXXXXXXX</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>XXXXXXXXXXXX</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>XXXXXXXXXXXX</li>
+                </ul> 
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            Copyright &copy; Food and Burps 2020.
+        </div>
+    </footer>
+    
+    <script src="assets/javascript/carousel.js"></script>
+    <script src="assets/javascript/navbar.js"></script>
+</body>
+</html>
