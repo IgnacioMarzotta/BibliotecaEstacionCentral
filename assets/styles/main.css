@@ -3,6 +3,11 @@
     font-family: Elegant;
     src: url(../fonts/ELEGANT.ttf);
 }
+@font-face 
+{
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat.ttf);
+}
 
 body
 {
@@ -20,6 +25,14 @@ body
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-right: auto;
     margin-left: auto;
+}
+
+.landing-section
+{
+    color: white;
+    min-height: 400px;
+    height: 100%; 
+    padding: 30px 0;
 }
 
 .card 
@@ -73,3 +86,25 @@ body
         max-width: 1320px;
     }
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #b15a20 #333333;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #333333;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #b15a20;
+    border-radius: 10px;
+    border: 2px solid #292929;
+  }

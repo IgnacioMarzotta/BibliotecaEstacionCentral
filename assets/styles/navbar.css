@@ -46,7 +46,6 @@
     justify-self: start;
     font-family: inherit;
     font-size: 1.6rem;
-    font-weight: 700;
     line-height: 1.25;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -91,6 +90,7 @@
     outline: none;
     color: var(--color-black-500);
     background: grey;
+    color: white;
 }
 
 .nav-search-input:hover
@@ -167,21 +167,26 @@
     row-gap: 1.25rem;
 }
 
-.nav-menu-link 
+.nav-menu-item
 {
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: inherit;
-    text-transform: uppercase;
-    color: var(--color-black-500);
-    transition: all 0.35s ease-in-out;
+    list-style-type: none;
+    text-decoration: none
 }
 
-.nav-menu-link:hover 
+.nav-menu-link
 {
-    outline: none;
-    color: var(--color-red-400);
+    font-family: Montserrat;
+    font-size: 1rem;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.35s ease-in-out;
+    text-decoration: none
+}
+
+.nav-menu-link:hover
+{
+    color: orange;
 }
 
 @media only screen and (min-width: 36rem) 
