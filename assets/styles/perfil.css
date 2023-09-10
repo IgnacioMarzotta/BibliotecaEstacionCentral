@@ -41,6 +41,7 @@ h5
 
 .grid-container > div:hover {
   background-color: #372e2a;
+  transition: 0.5s;
 }
 .grid-container > div {
   background-color: #1F1A18;
