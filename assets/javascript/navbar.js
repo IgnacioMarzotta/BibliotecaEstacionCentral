@@ -1,3 +1,5 @@
+// Ignacio Marzotta - 23.601.779-6
+
 const navbarMenu = document.getElementById("nav-menu");
 const burgerMenu = document.getElementById("nav-burger");
 
