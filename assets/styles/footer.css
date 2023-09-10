@@ -31,6 +31,11 @@ footer
     line-height: 25px;
 }
 
+.footer-items h1
+{
+    font-family: Montserrat;
+}
+
 .footer-social-media 
 {
     width: 100%;

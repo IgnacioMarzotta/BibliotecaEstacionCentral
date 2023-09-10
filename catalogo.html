@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Libros</title>
+    <link rel="stylesheet" href="assets/styles/catalogo.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="nav-container" id="header">
+        <nav class="navbar nav-outer">
+            <a href="index.html" class="nav-brand">Biblioteca EC</a>
+            <div class="nav-search">
+                <form class="nav-search-form">
+                    <input type="text" name="nav-search" class="nav-search-input" placeholder="Busca por titulo" autofocus>
+                    <!-- button type="submit" class="nav-search-submit" disabled></button -->
+                </form>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-menu-inner">
+                    <li class="nav-menu-item"><a href="index.html" class="nav-menu-link">Inicio</a></li>
+                    <li class="nav-menu-item"><a href="perfil.html" class="nav-menu-link">Perfil</a></li>
+                    <li class="nav-menu-item"><a href="catalogo.html" class="nav-menu-link">Galeria</a></li>
+                    <li class="nav-menu-item"><a href="#" class="nav-menu-link">Producto</a></li>
+                </ul>
+            </div>
+            <div class="nav-burger" id="nav-burger">
+                <span class="nav-burger-line"></span>
+                <span class="nav-burger-line"></span>
+                <span class="nav-burger-line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="category-selection">
+        <div class="nav container">
+            <a href="catalogo.html" class="logo">Libros</a>
+            <a href="peliculas.html" class="logo">Peliculas</a>
+            <!----ICONO DE CARRITO-->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="assets/img/Portadas2/jdh.png" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Libro test 1</div>
+                            <div class="cart-price">$25.000</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                     <!----Eliminar del carrito-->   
+                        <i class='bx bxs-trash-alt cart-remove'></i>
+                    </div>
+                </div>
+
+                    <!-- Total carrito -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+
+                </div>
+                <button type="button" class="btn-buy">Comprar</button>
+                <!-- Cerrar carrito -->
+                <i class='bx bx-x' id="close-cart"></i>
+
+
+
+            </div>
+
+
+           
+
+        </div>
+       
+    </div>
+
+    <section class="shop container">
+        <div class="section-title">Libros Disponibles</div>
+
+        <div class="shop-content">
+            <!--BOX-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 1</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--BOX2-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 2</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--BOX3-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 3</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--BOX4-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 4</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--BOX5-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 5</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--BOX6-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 6</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--BOX7-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 7</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--BOX8-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 8</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--BOX9-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 9</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--BOX10-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 10</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--BOX11-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 11</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--BOX12-->
+            <div class="product-box">
+                <img src="assets/img/Portadas2/jdh.png" alt="" class="product-img">
+                <h2 class="product-title">LIBRO TEST 12</h2>
+                <span class="price">$25.000</span>
+                <span class="stock">Stock: </span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="inner-footer">
+            <div class="footer-items">
+                <h1>Biblioteca Estacion Central</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, iusto ipsam harum veritatis, unde ex aliquid in recusandae quos nihil, repellat delectus veniam ullam fugit quo? Reiciendis ratione nesciunt libero!</p>
+            </div>
+            
+            <div class="footer-items">
+                <h3>Links</h3>
+                <div class="border1"></div>
+                <ul class="footer-list">
+                    <a href="index.html"><li>Inicio</li></a>
+                    <a href="perfil.html"><li>Perfil</li></a>
+                    <a href="catalogo.html"><li>Galeria</li></a>
+                    <a href="#"><li>Producto</li></a>
+                </ul>
+            </div>
+            
+            <div class="footer-items">
+                <h3>XXXXXX</h3>
+                <div class="border1"></div>
+                <ul class="footer-list">
+                    <a href="#"><li>XXXXXX</li></a>
+                    <a href="#"><li>XXXXXX</li></a>
+                    <a href="#"><li>XXXXXX</li></a>
+                    <a href="#"><li>XXXXXX</li></a>
+                </ul>
+            </div>
+            
+            <div class="footer-items">
+                <h3>XXXXXX</h3>
+                <div class="border1"></div>
+                <ul class="footer-list">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>XXXXXXXXXXXX</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>XXXXXXXXXXXX</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>XXXXXXXXXXXX</li>
+                </ul> 
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            Ignacio Marzotta - 23.601.779-6 &copy; Biblioteca Estacion Central 2023.
+        </div>
+    </footer>
+
+</body>
+</html>
