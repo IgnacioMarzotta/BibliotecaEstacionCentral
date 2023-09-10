@@ -42,9 +42,8 @@
 
 .nav-brand 
 {
-    font-family: Elegant !important;
+    font-family: Montserrat;
     justify-self: start;
-    font-family: inherit;
     font-size: 1.6rem;
     line-height: 1.25;
     letter-spacing: 3px;
@@ -78,46 +77,34 @@
 .nav-search-input 
 {
     display: block;
-    font-family: inherit;
+    font-family: Montserrat;
     font-size: 1rem;
-    font-weight: normal;
-    line-height: inherit;
     width: 100%;
     height: 100%;
     padding-block: 0.75rem;
     padding-left: 20px;
     border-radius: 20px;
-    outline: none;
-    color: var(--color-black-500);
-    background: grey;
+    outline: solid 2px white;
+    border: 0;
     color: white;
+    background: #1F1A18;
 }
 
-.nav-search-input:hover
-{
-    background-color: rgb(199, 199, 199);
-    transition: 0.4s;
-}
-
+.nav-search-input:hover,
 .nav-search-input:focus
 {
-    background-color: rgb(199, 199, 199);
+    background: #292929;
+    transition: 0.4s;
 }
 
 .nav-search-submit 
 {
-    height: 100% !important;
+    height: 100%;
     display: block;
     font-size: 1.25rem;
     line-height: 1.5;
     color: var(--color-white-500);
     background: transparent;
-}
-
-.nav-search-submit img
-{
-    width: 26px;
-    height: 26px;
 }
 
 @media only screen and (min-width: 62rem) 
@@ -140,13 +127,14 @@
 .nav-menu 
 {
     position: fixed;
+    z-index: 10;
     top: -100%;
     left: 0;
     width: 100%;
     height: auto;
     overflow: hidden;
     padding-block: 3rem 2rem;
-    background: var(--color-white-100);
+    background-color: black;
     box-shadow: var(--shadow-medium);
     transition: all 0.45s ease-in-out;
 }
@@ -231,7 +219,6 @@
     height: 1.15rem;
     border: none;
     outline: none;
-    background: none;
     visibility: visible;
     transform: rotate(0deg);
     transition: 0.35s ease;
@@ -259,7 +246,7 @@
     opacity: 1;
     border-radius: 1rem;
     transform: rotate(0deg);
-    background-color: var(--color-black-100);
+    background-color: white;
     transition: 0.25s ease-in-out;
 }
 

@@ -1,0 +1,91 @@
+/* Cristobal Zapata - 19.962.025-8 */
+
+body
+{
+  background-color: #2D2924;
+}
+
+#icono_perfil
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+h5
+{
+    color: rgb(245,255,51);
+    text-align: right;
+
+}
+   
+.item1 { grid-area: header; }
+.item2 { grid-area: menu ; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: inline-grid;
+  grid-template-areas:
+    'header header header'
+    'menu main right'
+    'menu footer footer';
+  gap: 2px;
+  grid-template-columns: 100px 1fr 100px;
+  background-color: white;
+  padding: 2px;
+  width: 100%;
+  height: 150px;
+}
+
+.grid-container > div:hover {
+  background-color: #372e2a;
+}
+.grid-container > div {
+  background-color: #1F1A18;
+  color: white;
+  /*text-align: center;*/
+  padding: 2px 0;
+  font-size: 25px;
+}
+
+.item2 img
+{
+  width: 99px;
+  height: 150px;
+}
+
+.main-grid
+{
+  padding: 0 1%;
+  display: grid;
+  grid-template-areas:
+    "col-1" 
+    "col-2";
+  gap: 20px;
+}
+
+@media (min-width: 700px)
+{
+  .main-grid
+  {
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+      "col-1 col-2";
+  }
+
+  .col-perfil
+  {
+    position: fixed;
+  }
+}
+
+header{
+  position: fixed;
+}
+
+.col-2
+{
+  border-radius: 100px;
+}

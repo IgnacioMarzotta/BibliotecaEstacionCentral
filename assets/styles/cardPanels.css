@@ -56,7 +56,7 @@
 {
   flex: 9;
   height: 100%;
-  animation: anime 1.5s;
+  animation: card-popup-animation 1s;
   text-align:left;
   display:none;
   font-family: sans-serif;
@@ -77,7 +77,7 @@
   font-weight: 500;
 }
 
-@keyframes anime 
+@keyframes card-popup-animation 
 {
   from
   {opacity: 0}
@@ -121,6 +121,9 @@
   max-width: 1200px;
   width: 100%; 
   height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: auto 0;
 }
 
 .img-card 

@@ -1,6 +1,6 @@
 //Main Banner
 
-const delay = 3000; //ms
+const delay = 4000;
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
@@ -42,7 +42,7 @@ document.querySelector(".prev-slide").addEventListener("click", function()
 
 
 
-//Category Carousel
+//Card Carousel
 function feature(e, featureClassName) 
 {
   var element = document.getElementsByClassName('tab-item');
