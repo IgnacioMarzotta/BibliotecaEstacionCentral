@@ -1,0 +1,19 @@
+{
+    "types": {
+      "1": "Libro",
+      "2": "Pelicula",
+      "3": "Documento Tecnico"
+    },
+    "genres": {
+      "1": "Ciencia Ficción",
+      "2": "Novela Romance",
+      "4": "Fantasia",
+      "7": "Aventura",
+      "5": "Novela Historica",
+      "6": "Terror",
+      "3": "Novela Negra",
+      "8": "Poesia",
+      "9": "Accion",
+      "10": "Comedia"
+    }
+  }

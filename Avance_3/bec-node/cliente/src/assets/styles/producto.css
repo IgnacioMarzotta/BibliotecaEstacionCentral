@@ -1,0 +1,29 @@
+/* Leandro Albornoz Chávez - 20.787.847-2 */
+
+.product
+{
+  text-align: center;
+}
+
+.product-details 
+{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1F1A18;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image 
+{
+  max-width: 300px;
+}
+
+.product-details-text 
+{
+  flex-grow: 1;
+  padding: 10px;
+  text-align: left;
+}
